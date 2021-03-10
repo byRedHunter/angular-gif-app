@@ -1,0 +1,20 @@
+html,
+body {
+  height: 100%;
+}
+
+.giffy-app {
+  background: rgb(214, 214, 214);
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 992px) {
+  .giffy-app {
+    flex-direction: row !important;
+  }
+  #sidebar {
+    height: 100vh;
+    min-width: 320px;
+    overflow-y: auto;
+  }
+}
