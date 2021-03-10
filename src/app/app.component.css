@@ -12,9 +12,9 @@ body {
   .giffy-app {
     flex-direction: row !important;
   }
-  #sidebar {
-    height: 100vh;
-    min-width: 320px;
+  .sidebar {
+    height: 100vh !important;
+    width: 320px !important;
     overflow-y: auto;
   }
 }
