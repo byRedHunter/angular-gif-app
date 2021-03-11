@@ -5,9 +5,10 @@
 
   <div class="list-group list-reset mt-4">
     <a
+      *ngFor="let item of historial"
       href="#"
       class="list-group-item list-group-item-action bg-primary text-light"
-      >Dashboard</a
+      >{{ item }}</a
     >
   </div>
 </div>
