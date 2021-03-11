@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+
+.giffy-app {
+  background: rgb(214, 214, 214);
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 992px) {
+  .giffy-app {
+    flex-direction: row !important;
+  }
+  .sidebar {
+    height: 100vh !important;
+    width: 320px !important;
+    overflow-y: auto;
+  }
+}
