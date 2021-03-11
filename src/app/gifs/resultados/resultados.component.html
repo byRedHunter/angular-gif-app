@@ -1,4 +1,7 @@
-<div class="card" *ngFor="let gif of resultados">
+<div
+  class="card animate__animated animate__bounceIn"
+  *ngFor="let gif of resultados"
+>
   <img
     class="card-img-top"
     src="{{ gif.images.downsized_medium.url }}"
