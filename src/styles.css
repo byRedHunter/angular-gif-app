@@ -8,6 +8,18 @@ body {
   min-height: 100vh;
 }
 
+.results-gifs {
+  display: grid;
+  grid-template: auto / 1fr;
+  gap: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .results-gifs {
+    grid-template: auto / 1fr 1fr;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .giffy-app {
     flex-direction: row !important;
@@ -16,5 +28,15 @@ body {
     height: 100vh !important;
     width: 320px !important;
     overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .container-results {
+    margin-left: 320px;
+  }
+  .results-gifs {
+    padding: 0 20px;
+    grid-template: auto / 1fr 1fr 1fr;
   }
 }
